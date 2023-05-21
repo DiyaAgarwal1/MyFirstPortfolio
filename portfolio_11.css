@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+header.top-header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgb(0,0,0,0.6)),url('../Images/Cover.jpg');
+    background-size: cover;
+    height: 600px;
+}
+ header.top-header nav{
+    text-align: center;
+    padding: 5px; }
+
+
+header.top-header nav ul li{
+    float: left;
+    list-style: none;
+    font-size: 23px;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+header.top-header nav ul li a{
+    text-decoration: none;
+    color: azure;
+}
+
+header.top-header nav ul li a.button{
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+header.top-header nav ul li.right{
+    float: right;
+}
+nav ul::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+header.top-header nav ul li a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header.top-header nav ul li a:hover{
+    color:lightseagreen;
+}
+
+div.container{
+    color: azure;
+    text-align: center;
+    margin-top: 150px;
+}
+
+div.container p{
+    color: rgb(173, 237, 100);
+    font-size: 25px;
+}
+
+div.container h1{
+      font-size: 50px;
+}
+
+div.container a.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+div.container a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0,0,0,0.5);
+}
+section.about h2{
+    text-align: center;
+}
+
+section.about div.about-container div.matter,section.about div.about-container div.vector-img{
+    width:50%;
+    float: left;
+    font-size: 20px;
+}
+ 
+ section.about div.about-container::after{
+    display: block;
+    clear: both;
+    content: ""; 
+}
+
+div.about-container div.matter{
+    margin-top: 15px;
+    text-align: left;
+}
+
+div.matter p{
+    padding: 10px;
+}
+
+div.matter a.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+div.matter a.button:hover{
+    color: lightseagreen;
+    background-color: rgba(0,0,0,0.5);
+}
+
+div.menu div.parts{
+    width: 25%;
+    float: left;
+}
+div.menu::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+div.parts{
+    font-size: 25px;
+}
+
+div.parts p.sub-heading{
+    color:palevioletred;
+    font-size: 28px;
+    margin: 10px;
+}
+
+div.parts p.content{
+    margin:5px;
+    font-size: 23px;
+}
+
+a.link{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    margin: 5px;
+}
+a.link:hover{
+    color: lightseagreen;
+}
+hr{width: 99%;}
+
+section.why-me{
+    text-align: center;
+    margin: 20px;
+}
+
+.why-me .why-container .vector-art,.why-me .why-container .why-me-matter{
+    width: 50%;
+    float: left;
+}
+.why-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.why-container{
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 20px;
+    text-align: left;
+}
+.why-me-matter{
+    text-align: center;
+    margin-top: 150px;
+}
+.why-me-matter a.button{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover{
+    color: lightseagreen;
+    background-color: rgba(0,0,0,0.5);
+}
+.contact-me{
+    background-color: lightslategray;
+    padding: 50px;
+}
+.contact-me h2{
+    color: black;
+    text-align: center;
+}
+
+.contact-img, .contact-details{
+    width: 50%;
+    float: left;
+}
+.contact-container::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.contact-details ul{
+    color: whitesmoke;
+    margin: 10px;   
+}
+
+.button-2{
+    background-color: azure;
+    color: black;
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+@media( max-width:500px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    header.top-header nav ul li{
+        display: none;
+    }
+    header.top-header{
+        background-image: cover;
+        height:60vh;
+        width: 100vw;
+    }
+    header.top-header div.container h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    header.top-header div.container p{
+        font-size: 20px;
+        text-align: center;
+    }
+    header.top-header div.container a{
+        font-size: 19px;
+    }
+    section.about div.about-container div.matter , section.about div.about-container div.vector-img{
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        float: none;
+    }
+    section.about div.about-container div.matter{
+        text-align: center;
+        font-size: 20px;
+    }
+    section.about div.about-container div.vector-img img{
+        width: 100vw;
+    }
+    div.menu div.parts{
+        width: 100vw;
+        float: none;
+    }
+    div.menu div.parts{
+        text-align:center;
+    }
+    div.menu div.parts img{
+        width: 100vw;
+        padding: 2px 27px;
+    }
+    div.menu div.parts p.sub-heading{
+        text-align: center;
+        font-size: 22px;
+    }
+    div.menu div.parts p.content{
+        text-align: center;
+        font-size: 16px;
+    }
+    section.why-me{
+        padding: 0px;
+        margin: 0px;
+    }
+    section.why-me div.why-container{
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        width: 100vw;
+    }
+    section.why-me h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    section.why-me div.why-container div.vector-art,section.why-me div.why-container div.why-me-matter{
+        width: 100vw;
+        float: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    section.why-me div.why-container div.vector-art img{
+        width: 100vw;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    section.why-me div.why-container div.why-me-matter p{
+        font-size: 16px;
+        text-align: center;
+        width: 100vw;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    section.contact-me h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    section.contact-me div.contact-container div.contact-details,section.contact-me div.contact-container div.contact-img{
+        float: none;
+        width: 100vw;
+    }
+    section.contact-me div.contact-container div.contact-details{
+        text-align: center;
+    }
+    section.contact-me div.contact-container div.contact-img img{
+        width: 100vw;
+    }
+}
